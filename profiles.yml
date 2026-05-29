@@ -1,0 +1,13 @@
+dbt_202610:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: dbt-exam-project-490202
+      dataset: dbt_dataset
+      keyfile: C:\Users\User\Downloads\Parcial1_DBT\Parcial1_DBT\keys\service-account.json
+      threads: 4
+      timeout_seconds: 300
+      location: US
+      priority: interactive
